@@ -1,0 +1,84 @@
+.button {
+  padding: $spacing-3 18px;
+  height: 44px;
+  border: 1px solid transparent;
+  border-radius: $radius-button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-2;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.leftIcon {
+  display: flex;
+}
+
+.primary {
+  background-color: $btn-primary-bg;
+  color: $btn-primary-text;
+
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
+    background-color: $btn-primary-hover;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $btn-primary-focus-ring;
+  }
+}
+
+.secondary {
+  background-color: $btn-secondary-bg;
+  border-color: $btn-secondary-border;
+  color: $btn-secondary-text;
+
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
+    background-color: $btn-secondary-hover;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $btn-secondary-focus-ring;
+  }
+}
+
+.disabled {
+  background-color: $btn-disabled-bg;
+  color: $btn-disabled-text;
+  cursor: not-allowed;
+}
+
+.green {
+  background-color: $btn-green-bg;
+  color: $btn-green-text;
+
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
+    background-color: $btn-green-hover;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $btn-green-focus-ring;
+  }
+}
+
+.red {
+  background-color: $btn-red-bg;
+  color: $btn-red-text;
+
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
+    background-color: $btn-red-hover;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $btn-red-focus-ring;
+  }
+}

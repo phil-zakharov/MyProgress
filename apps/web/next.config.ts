@@ -1,19 +1,15 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
+import path from 'path';
 
 const nextConfig: NextConfig = {
-  /* config options here */
   experimental: {
     agentFeedback: true,
   },
   cacheComponents: true,
   partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
+  sassOptions: {
+    additionalData: `@use "@/src/styles/variables.module.scss" as *;`,
+    includePaths: [path.join(__dirname, 'app')],
   },
 };
 

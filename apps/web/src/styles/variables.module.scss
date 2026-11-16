@@ -1,0 +1,83 @@
+@use 'sass:color';
+
+// COLORS
+$bg: #F7F5F0;
+$dark: #24382E;
+$primary: #5755D9;
+$line: #E6E9EF;
+$ink: #1E211D;
+$muted: #686E66;
+$green: #25745A;
+$amber: #94651B;
+$red: #BC4545;
+
+// BUTTONS
+$btn-primary-bg: $primary;
+$btn-primary-text: #FFFFFF;
+$btn-primary-hover: color.adjust($primary, $lightness: -7%);
+$btn-primary-focus-ring: color-mix(in srgb, $primary 55%, #FFFFFF);
+
+$btn-secondary-bg: #FFFFFF;
+$btn-secondary-text: $ink;
+$btn-secondary-border: $line;
+$btn-secondary-hover: color.adjust(#FFFFFF, $lightness: -7%);
+$btn-secondary-focus-ring: color-mix(in srgb, $ink 40%, #FFFFFF);
+
+$btn-disabled-bg: $line;
+$btn-disabled-text: $muted;
+
+$btn-green-bg: #315C46;
+$btn-green-text: #FFFFFF;
+$btn-green-hover: #244534;
+$btn-green-focus-ring: #91A99A;
+
+$btn-red-bg: $red;
+$btn-red-text: #FFFFFF;
+$btn-red-hover: color.adjust($red, $lightness: -7%);
+$btn-red-focus-ring: color-mix(in srgb, $red 55%, #FFFFFF);
+
+// INPUTS
+$input-bg: #FFFFFF;
+$input-border: $line;
+$input-border-focus: $primary;
+$input-border-error: $red;
+$input-text: $ink;
+$input-placeholder: $muted;
+
+// BADGE
+$badge-pending-bg: $bg;
+$badge-pending-text: $muted;
+$badge-done-bg: #EAF5EF;
+$badge-done-text: $green;
+$badge-skipped-bg: #FBF3E5;
+$badge-skipped-text: $amber;
+$badge-in-progress-bg: #EEEDFD;
+$badge-in-progress-text: $primary;
+
+// RADIUS
+$radius-s: 4px;
+$radius-m: 8px;
+$radius-l: 12px;
+$radius-button: 9px;
+
+// SPACING
+$spacing-1: 4px;
+$spacing-2: 8px;
+$spacing-3: 12px;
+$spacing-4: 16px;
+$spacing-5: 24px;
+$spacing-6: 32px;
+$spacing-7: 40px;
+
+// ADAPTIVE
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+
+@mixin md {
+  @media (min-width: $md) { @content; }
+}
+
+@mixin lg {
+  @media (min-width: $lg) { @content; }
+}

@@ -1,0 +1,29 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.pending {
+  background-color: $badge-pending-bg;
+  color: $badge-pending-text;
+}
+
+.done {
+  background-color: $badge-done-bg;
+  color: $badge-done-text;
+}
+
+.skipped {
+  background-color: $badge-skipped-bg;
+  color: $badge-skipped-text;
+}
+
+.inProgress {
+  background-color: $badge-in-progress-bg;
+  color: $badge-in-progress-text;
+}

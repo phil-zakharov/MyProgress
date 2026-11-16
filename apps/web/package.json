@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "next": "16.4.6",
@@ -14,13 +16,30 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "@tailwindcss/turbopack": "4.3.3",
+    "@chromatic-com/storybook": "latest",
+    "@storybook/addon-a11y": "^10.6.7",
+    "@storybook/addon-docs": "^10.6.7",
+    "@storybook/addon-mcp": "^10.6.7",
+    "@storybook/addon-vitest": "^10.6.7",
+    "@storybook/nextjs-vite": "^10.6.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitest/browser-playwright": "^4",
+    "@vitest/coverage-v8": "^4",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
-    "tailwindcss": "4.3.3",
-    "typescript": "^5"
+    "eslint-plugin-storybook": "^10.6.7",
+    "playwright": "latest",
+    "sass": "^1.108.2",
+    "storybook": "^10.6.7",
+    "typescript": "^5",
+    "vite": "latest",
+    "vitest": "^4"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "esbuild@0.28.2": true,
+    "fsevents@2.3.3": true
   }
 }

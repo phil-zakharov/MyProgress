@@ -1,0 +1,2 @@
+[     535ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:6006/favicon.ico:1
+[     815ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:6006/node_modules/.cache/storybook/10.6.7/9791e0e12f559a4e39854d3d8b7004ec1c8d0cd662fcbcd62fe92e9d2b18f5db/sb-vite/deps/client-BhjAekzM.js?v=9b75f692:15819
